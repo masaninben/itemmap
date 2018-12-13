@@ -7,11 +7,10 @@ import ItemCont from '@/components/ItemCont'
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
-      name: 'MenuList',
-      component: MenuList
+      name: 'ItemCont',
+      component: ItemCont
     },
     {
       path: '/ProposalCont',

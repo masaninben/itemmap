@@ -1,14 +1,19 @@
 <template>
-
   <div id="app">
-    <router-view/>
+    <v-app id="inspire" dark>
+      <menulist />
+      <router-view/>
+    </v-app>
   </div>
-  
 </template>
 
 <script>
+import MenuList from "@/components/MenuList";
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    menulist: MenuList
+  }
 };
 </script>
 
