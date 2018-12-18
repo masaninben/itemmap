@@ -24,13 +24,13 @@ export default {
       drawer: false,
       menuItems: [
         {
-          icon: "supervisor_account",
-          title: "アイテム登録",
-          link: "/ProposalCont"
+          icon: "search",
+          title: "アイテム検索",
+          link: "/ItemSearch"
         },
-        { icon: "room", title: "マイアイテム", link: "/ItemCont" },
-        { icon: "person", title: "アカウント情報", link: "/ItemList" },
-        { icon: "face", title: "itemmap TOP", link: "/" }
+        { icon: "edit", title: "アイテム新規追加", link: "/ItemForm" },
+        { icon: "apps", title: "マイアイテム", link: "/" },
+        { icon: "person", title: "アカウント情報", link: "/ItemView" }
       ]
     };
   }

@@ -1,5 +1,5 @@
 <template>
   <div>
-    <p>アイテム内容p</p>
+    <p>提案</p>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
     <div>
-        <p>手放した方法</p>
+        <p>カテゴリーリスト</p>
     </div>
 </template>

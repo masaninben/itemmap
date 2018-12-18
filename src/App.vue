@@ -1,18 +1,22 @@
 <template>
   <div id="app">
     <v-app id="inspire" dark>
-      <menulist />
+      <MenuList />
       <router-view/>
+      <TheFooter />
     </v-app>
   </div>
 </template>
 
 <script>
-import MenuList from "@/components/MenuList";
+import MenuList from "@/MenuList";
+import TheFooter from "@/Footer";
+
 export default {
   name: "App",
   components: {
-    menulist: MenuList
+    MenuList,
+    TheFooter
   }
 };
 </script>

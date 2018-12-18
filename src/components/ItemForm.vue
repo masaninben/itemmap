@@ -1,5 +1,5 @@
 <template>
     <div>
-        <p>手放した方法</p>
+        <p>アイテム新規登録</p>
     </div>
 </template>
