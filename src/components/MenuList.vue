@@ -2,6 +2,13 @@
   <div>
     <v-navigation-drawer v-model="drawer" clipped fixed app>
       <v-list>
+        <v-list-tile-avatar>
+          <img src="https://cdn.vuetifyjs.com/images/lists/1.jpg">
+        </v-list-tile-avatar>
+        <v-list-tile-content>
+          <v-list-tile-title>ninben</v-list-tile-title>
+        </v-list-tile-content>
+
         <v-list-tile v-for="item in menuItems" :key="item.title" :to="item.link">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
@@ -26,11 +33,11 @@ export default {
         {
           icon: "search",
           title: "アイテム検索",
-          link: "/ItemSearch"
+          link: "/ItemNameSearch"
         },
-        { icon: "edit", title: "アイテム新規追加", link: "/ItemForm" },
+        // { icon: "edit", title: "アイテム新規追加", link: "/ItemForm" },
         { icon: "apps", title: "マイアイテム", link: "/" },
-        { icon: "person", title: "アカウント情報", link: "/ItemView" }
+        { icon: "person", title: "アカウント情報", link: "/AccountInfo" }
       ]
     };
   }

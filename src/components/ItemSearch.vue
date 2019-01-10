@@ -13,6 +13,7 @@
         <p>アイテム検索</p>
     </div>
 </template>
+
 <script>
 export default {
   data() {
@@ -25,7 +26,7 @@ export default {
           link: "/CategoryList"
         },
         { icon: "list", title: "ブランド", link: "/BrandList" },
-        { icon: "search", title: "名前から検索", link: "/ItemForm" }
+        { icon: "search", title: "名前から検索", link: "/ItemNameSearch" }
       ]
     };
   }

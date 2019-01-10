@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import ItemView from '@/components/ItemView'
-import ItemCont from '@/components/ItemCont'
+import ItemPage from '@/components/ItemPage'
 import ItemForm from '@/components/ItemForm'
 import ItemImage from '@/components/ItemImage'
+import ItemCont from '@/components/ItemCont'
 import ItemList from '@/components/ItemList'
 import ItemMap from '@/components/ItemMap'
 import ItemSearch from '@/components/ItemSearch'
@@ -12,6 +12,8 @@ import ProposalBtn from '@/components/ProposalBtn'
 import ProposalCont from '@/components/ProposalCont'
 import CategoryList from '@/components/CategoryList'
 import BrandList from '@/components/BrandList'
+import AccountInfo from '@/components/AccountInfo'
+import ItemNameSearch from '@/components/ItemNameSearch'
 
 
 
@@ -30,8 +32,8 @@ export default new Router({
     },
     {
       path: '/items/:id',
-      name: 'ItemCont',
-      component: ItemCont
+      name: 'ItemPage',
+      component: ItemPage
     }, {
       path: '/ItemForm',
       name: 'ItemForm',
@@ -40,6 +42,10 @@ export default new Router({
       path: '/ItemImage',
       name: 'ItemImage',
       component: ItemImage
+    }, {
+      path: '/ItemCont',
+      name: 'ItemCont',
+      component: ItemCont
     }, {
       path: '/ItemMap',
       name: 'ItemMap',
@@ -57,10 +63,6 @@ export default new Router({
       name: 'ProposalBtn',
       component: ProposalBtn
     }, {
-      path: '/ItemView',
-      name: 'ItemView',
-      component: ItemView
-    }, {
       path: '/CategoryList',
       name: 'CategoryList',
       component: CategoryList
@@ -68,6 +70,14 @@ export default new Router({
       path: '/BrandList',
       name: 'BrandList',
       component: BrandList
+    }, {
+      path: '/AccountInfo',
+      name: 'AccountInfo',
+      component: AccountInfo
+    }, {
+      path: '/ItemNameSearch',
+      name: 'ItemNameSearch',
+      component: ItemNameSearch
     }
   ]
 })
